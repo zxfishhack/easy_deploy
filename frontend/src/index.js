@@ -6,17 +6,27 @@ import App        from './components/App';
 import url        from 'url';
 import history    from './core/history';
 import pages      from './pages';
+import router     from './router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import NotFound   from './pages/notFound';
 const safeInit    = require('./core/common').safeInit;
 
+const names = {
+    "/" : "Dashboard",
+    "/hosts": "Hosts",
+    "/pkgs": "Packages",
+    "/deploy": "Deploy",
+}
+
 const onLocationChange = async location => {
-    console.log(location);
     let u = await url.parse(location.search, true);
-    console.log(u);
-    //let component = await resolve(pages, {path: location.pathname, query: u.query});
-    ReactDOM.render(<App pageName="Dashboard" children={<NotFound/>} />, document.getElementById("app"));	
+    let {component, _} = await router.resolve({
+        pathname: location.pathname,
+        fetchQuery: location.search,
+    });
+    let pageName = names[location.pathname];
+    ReactDOM.render(<App pageName={pageName ? pageName : "404"} children={component} />, document.getElementById("app"));	
 };
 
 function run() {

@@ -18,6 +18,7 @@ import {
 
 export default class Example extends Component {
   static propTypes = {
+    envId: PropTypes.integer,
 		children: PropTypes.element.isRequired,
 		pageName: PropTypes.string.isRequired,
 	};
@@ -27,7 +28,7 @@ export default class Example extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md" fixed="top">
+        <Navbar color="primary" dark expand="sm" fixed="top">
           <NavbarBrand href="/#/">Easy Deploy - {this.props.pageName}</NavbarBrand>
           <Nav className="ml-auto" navbar>
             <NavItem>
