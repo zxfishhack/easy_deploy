@@ -1,0 +1,4 @@
+frontend/node_modules/
+~$easy_deploy.mmap.~$lock
+easy_deploy.mmap
+frontend/dist/
