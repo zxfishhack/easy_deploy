@@ -1,0 +1,10 @@
+{"r": "ok", "data": {
+  "machines": [{
+    "id": "m1",
+    "ip": "127.0.0.1"
+  }, {
+    "id": "m2",
+    "ip": "127.0.0.2",
+    "desc": "a very very very very very very very very very very very very very very very very very very very very very very very very long desc"
+  }]
+}}

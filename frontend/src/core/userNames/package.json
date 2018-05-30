@@ -1,6 +1,0 @@
-{
-	"private": true,
-	"name": "userNames",
-	"main": "./userNames.server.js",
-	"browser": "./userNames.client.js"
-}

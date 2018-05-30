@@ -18,7 +18,6 @@ import {
 
 export default class Example extends Component {
   static propTypes = {
-    envId: PropTypes.integer,
 		children: PropTypes.element.isRequired,
 		pageName: PropTypes.string.isRequired,
 	};
@@ -32,7 +31,7 @@ export default class Example extends Component {
           <NavbarBrand href="/#/">Easy Deploy - {this.props.pageName}</NavbarBrand>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/#/hosts">Hosts</NavLink>
+              <NavLink href="/#/ns">Namespaces</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/#/pkgs">Packages</NavLink>
@@ -44,7 +43,7 @@ export default class Example extends Component {
         </Navbar>
         <div
           style={{
-            paddingTop: '60px',
+            paddingTop: '75px',
           }}
         >
           {this.props.children}

@@ -1,6 +1,0 @@
-{
-	"private": true,
-	"name": "ed",
-	"main": "./ed.server.js",
-	"browser": "./ed.client.js"
-}

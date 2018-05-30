@@ -5,15 +5,16 @@ import NotFound from './pages/notFound';
 
 import Dashboard from './pages/dashboard';
 import Packages  from './pages/packages';
-import Hosts     from './pages/hosts';
 import Deploy    from './pages/deploy';
-
+import Namespaces from './pages/namespaces';
+//query: graphql``
+//chunk: [] //extern js chunk
 const routes = [
   {
-    path: '/hosts',
+    path: '/ns',
     render: (_, data) => ({
       component: (
-        <Hosts />
+        <Namespaces />
       ),
     })
   },

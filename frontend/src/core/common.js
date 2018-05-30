@@ -1,8 +1,3 @@
-/**
- * Created by fish on 16/10/24.
- */
-
-module.exports.isElearning = path => Boolean(/^\/elearning/.exec(path));
 module.exports.safeInit = func => {
 	"use strict";
 	if (['complete', 'loaded', 'interactive'].includes(document.readyState) && document.body) {
@@ -20,13 +15,4 @@ module.exports.initModalSpinner = () => {
 		'<div class="progress-bar" style="width: 100%;"></div>' +
 		'</div>' +
 		'</div>';
-};
-
-module.exports.getFilenameExt = filename => {
-	"use strict";
-	let parts = filename.split('.');
-	if (parts.length === 1) {
-		return 'bin';
-	}
-	return parts[parts.length - 1].toLowerCase();
 };

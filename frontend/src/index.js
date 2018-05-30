@@ -7,8 +7,9 @@ import url        from 'url';
 import history    from './core/history';
 import pages      from './pages';
 import router     from './router';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
+import('bootstrap/dist/css/bootstrap.min.css');
+import('jquery');
+import('bootstrap');
 import NotFound   from './pages/notFound';
 const safeInit    = require('./core/common').safeInit;
 
@@ -17,6 +18,7 @@ const names = {
     "/hosts": "Hosts",
     "/pkgs": "Packages",
     "/deploy": "Deploy",
+    "/ns": "Namespaces"
 }
 
 const onLocationChange = async location => {

@@ -1,0 +1,6 @@
+{
+	"name": "NamespaceComponent",
+	"version": "1.0.0",
+	"private": true,
+	"main": "./nsc.js"
+}

@@ -11,9 +11,9 @@ class NotFound extends Component {
 						<Col md={{size: 6, offset: 3}}>
 							<article className="boxIcon hover text-center">
 								<i className="icon-unlink iconBig iconRounded" />
-								<h1>页面无法找到</h1>
-								<p>您所请求的页面可能被移除或者暂时无法访问。</p>
-								<a href="/" className="btn btn-lg btn-primary mt15">回到首页</a>
+								<h1>Page Not Found</h1>
+								<p>the page you requested does not exist</p>
+								<a href="/" className="btn btn-lg btn-primary mt15">Home</a>
 							</article>
 						</Col>
 					</Row>
